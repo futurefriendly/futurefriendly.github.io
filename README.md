@@ -1,0 +1,2 @@
+# futurefriendly.github.io
+
