@@ -1,14 +1,13 @@
-#Future Friendly 面向未来的友好设计(中文版)
-
-## [futurefriend.ly](http://futurefriend.ly)
-
-A manifesto, thinking points and resources for the future-friendly web. 
+# Future Friendly  
+#(Chinese translation project 中文翻译项目)
 
 Translator:
 
 * Benny Chia
 
-Built lovingly at #mobilewood by:
+## [futurefriend.ly](http://futurefriend.ly)
+
+A manifesto, thinking points and resources for the future-friendly web. Built lovingly at #mobilewood by:
 
 * Stephanie Rieger
 * Jeremy Keith
