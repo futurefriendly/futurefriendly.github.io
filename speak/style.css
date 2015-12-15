@@ -9,7 +9,7 @@ address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:nor
 ol,ul{list-style:none}
 caption,th{text-align:left}
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-body{ font:16px/1.5 Helvetica,Arial,sans-serif; -webkit-user-select:none}
+body{ font:16px/1.5 Helvetica,Arial,Mingliu,sans-serif; -webkit-user-select:none}
 input,textarea,select,button{ outline: none; resize:none; font:16px/1.5 Helvetica,Arial,sans-serif;}
 select{font-size:12px}
 button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
@@ -18,3 +18,21 @@ a{ text-decoration: none; outline: none; cursor: pointer;}
 a:link,label,body{ -webkit-tap-highlight-color:transparent; -webkit-focus-ring-color:transparent;}
 a:hover{ text-decoration:none;}
 a:active{ background:none;}
+
+.tx_c{ text-align:center;}
+
+.clear:after{ content:'.'; clear:both; display:block;}
+.clear{ zoom:1;}
+
+@font-face {
+    font-family: 'baskerville';
+    src: url('./font/baskerville-regular-webfont.eot');
+    src: url('./font/baskerville-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./font/baskerville-regular-webfont.woff2') format('woff2'),
+         url('./font/baskerville-regular-webfont.woff') format('woff'),
+         url('./font/baskerville-regular-webfont.ttf') format('truetype'),
+         url('./font/baskerville-regular-webfont.svg#baskervilleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

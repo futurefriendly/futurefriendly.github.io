@@ -8,38 +8,85 @@
 <meta name="format-detection" content="telephone=no" />
 <link rel="stylesheet" type="text/css" href="./style.css" />
 <style>
-.container{ padding-top:50px; max-width:700px; margin:0 auto; padding:30px;}
-h1{ font-size:48px; font-family:Microsoft Yahei; text-align:center; }
-h2{ font-size:24px; font-family:Microsoft Yahei; text-align:center;margin-top:30px}
+body{ background:#115740;}
+p{ margin-top:10px}
+.c_t9{ color:#999}
+.container{}
+
+.toparea{ padding:50px 0 35px; border-top:#b9975b 5px solid; background:#fff;}
+.toparea h1{ font-size:32px; font-family:baskerville; text-transform:uppercase; text-align:center; color:#22513d}
+.toparea h2{ font-size:26px; text-align:center;}
+
+.navarea{ background-color:#1f6c56; height:12px; border-bottom:#b9975b 4px solid}
+
+.eventarea{ padding:50px 0; background:#fff;}
+.eventarea .inner{ max-width:700px; margin:0 auto;}
+.eventarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
+.eventlist .item{ margin-top:30px; vertical-align:top}
+.eventlist .c1{ position:relative; float:left; text-align:center; padding:5px 15px; text-transform:uppercase;}
+.eventlist .c1:after{ content:''; position:absolute; width:7px; height:100%; top:0; right:-7px; background:#d0d3d4;}
+.eventlist .c1 .date1,
+.eventlist .c1 .date3{ font-size:14px; color:#115740}
+.eventlist .c1 .date2{ color:#115740; font-size:30px; font-weight:300}
+.eventlist .c2{ overflow:hidden; border-left:#d0d3d4 7px solid; padding:5px 15px;}
+
+.footarea{ background:#115740; padding-top:20px; padding-bottom:50px; border-top:#b9975b 3px solid; color:#fbfcfc}
+.footarea h3{ text-align:center; margin-top:30px; font-size:20px}
+.footarea p{ color:#fbfcfc}
+.footarea a{ color:#e6edeb;}
+.footarea a:hover{ text-decoration:underline;}
 .wechat{ text-align:center;}
 .wechat img{ width:120px;}
-ul{ margin:40px 0; text-align:center; border-top:#999 1px dotted; border-bottom:#999 1px dotted; padding:40px;}
-.tx_c{ text-align:center;}
-p{ color:#999; margin-top:10px}
 </style>
 </head>
 
 <body ontouchstart="">
 <div class="container">
-    <h1>問津書院</h1>
+    <div class="toparea">
+        <h1><big>F</big>uture <big>F</big>riendly <big>C</big>ollege</h1>
+        <h2>問津書院</h2>
+    </div>
 
-    <ul>
-        <li class="item">
-            12月27日问津书院第1期分享活动（讲师征集中）<br />地点：北京市海淀区知春路希格玛大厦
-        </li>
-    </ul>
+    <div class="navarea">
+        
+    </div>
 
-    <h2>公众号</h2>
-    <p class="wechat">
-        <img src="./en.jpg" /><img src="./zh.jpg" style="margin-left:20px" />
-    </p>
-    <p class="tx_c"><a href="http://www.futurefriendly.cn">Future Friendly</a> & 问津书院</p>
+    <div class="bannerarea">
+        
+    </div>
 
-    <h2>关于书院</h2>
-    <p class="tx_c">@帝都，辐射互联网，一群爱学习爱分享的大叔和小鲜肉</p>
+    <div class="eventarea">
+        <div class="inner">
+        <h3>Events</h3>
+        <ul class="eventlist clear">
+            <li class="item">
+                <div class="c1">
+                    <div class="date1">Dec</div>
+                    <div class="date2">27</div>
+                    <div class="date3">2:00pm</div>
+                </div>
+                <div class="c2">
+                    <div class="tit">问津书院第1期分享活动（讲师征集中）<br /><small class="c_t9">The kickoff presentation</small></div>
+                    <p>地点：北京市海淀区知春路希格玛大厦<br /><small class="c_t9">Address: Sigma Buiding, Zhichun Rd., Haidian District, Beijing.</small></p>
+                </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+    <div class="footarea">
+        <h3>微信公众号</h3>
+        <p class="tx_c">Wechat QRcode</p>
+        <p class="wechat">
+            <img src="./en.jpg" /><img src="./zh.jpg" style="margin-left:20px" />
+        </p>
+        <p class="tx_c"><a href="http://www.futurefriendly.cn">Future Friendly</a> & <a href="http://www.futurefriendly.cn/speak/">问津书院</a></p>
+        <p class="tx_c">@帝都，辐射互联网，一群爱学习爱分享的大叔和小鲜肉</p>
+        <p class="tx_c">A group guys focus on web design & develop who loves sharing now based in Beijing.</p>
+    </div>
+
 </div>
 <script type="text/javascript" src="http://www.xiaojukeji.com/js/jquery.js"></script>
-
 </body>
 
 </html>
