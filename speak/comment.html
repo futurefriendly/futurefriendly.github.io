@@ -33,16 +33,9 @@ p{ margin-top:10px}
 .bannerarea .txtarea .inner{ width:100%; padding-top:50px; max-width:700px; margin:0 auto;}
 .bannerarea .txtarea .inner .con{ float:left; background:rgba(0,0,0,.7); color:#fff; padding:30px; font-size:18px}
 
-.eventarea{ padding:30px 20px 50px; background:#fff;}
-.eventarea .inner{ max-width:700px; margin:0 auto;}
-.eventarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
-.eventlist .item{ margin-top:30px; vertical-align:top}
-.eventlist .c1{ position:relative; float:left; text-align:center; padding:5px 15px; text-transform:uppercase;}
-.eventlist .c1:after{ content:''; position:absolute; width:7px; height:100%; top:0; right:-7px; background:#d0d3d4;}
-.eventlist .c1 .date1,
-.eventlist .c1 .date3{ font-size:14px; color:#115740}
-.eventlist .c1 .date2{ color:#115740; font-size:30px; font-weight:300}
-.eventlist .c2{ overflow:hidden; border-left:#d0d3d4 7px solid; padding:5px 15px;}
+.commentarea{ padding:30px 20px 50px; background:#fff;}
+.commentarea .inner{ max-width:700px; margin:0 auto;}
+.commentarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
 
 .footarea{ background:#115740; padding:20px 20px 50px; border-top:#b9975b 3px solid; color:#fbfcfc}
 .footarea h3{ text-align:center; margin-top:30px; font-size:20px}
@@ -77,8 +70,8 @@ p{ margin-top:10px}
 
     <div class="navarea">
         <div class="inner clear">
-            <a class="lk select" href="./">首页</a>
-            <a class="lk" href="./comment.html">交流</a>
+            <a class="lk" href="./">首页</a>
+            <a class="lk select" href="./comment.html">交流</a>
         </div>
     </div>
 
@@ -91,22 +84,31 @@ p{ margin-top:10px}
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAH0AQMAAAAXHkZRAAAABGdBTUEAALGPC/xhBQAAAANQTFRF////p8QbyAAAAGBJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/g0m+wABG8CoqwAAAABJRU5ErkJggg==" />
     </div>
 
-    <div class="eventarea">
+    <div class="commentarea">
         <div class="inner">
-        <h3>Events</h3>
-        <ul class="eventlist clear">
-            <li class="item">
-                <div class="c1">
-                    <div class="date1">Dec</div>
-                    <div class="date2">27</div>
-                    <div class="date3">2:00pm</div>
-                </div>
-                <div class="c2">
-                    <div class="tit">「开发技术场」问津书院第1期分享活动（讲师征集中）<br /><small class="c_t9">The kickoff presentation</small></div>
-                    <p>地点：北京市海淀区知春路希格玛大厦，腾讯公司B1培训教室<br /><small class="c_t9">Address: B1 Floor, Sigma Buiding, Zhichun Rd., Haidian District, Beijing.</small></p>
-                </div>
-            </li>
-        </ul>
+        <h3>Comments</h3>
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//fflycollege.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </div>
     </div>
 
