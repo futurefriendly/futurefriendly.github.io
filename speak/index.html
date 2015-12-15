@@ -7,6 +7,8 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 <meta name="format-detection" content="telephone=no" />
 <link rel="stylesheet" type="text/css" href="./style.css" />
+<link rel="stylesheet" href="./assets/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/owlcarousel/owl.theme.default.min.css">
 <style>
 body{ background:#115740;}
 p{ margin-top:10px}
@@ -17,7 +19,7 @@ p{ margin-top:10px}
 
 .toparea{ padding:50px 20px 35px; border-top:#b9975b 4px solid; background:#fff;}
 .toparea h1{ font-size:32px; font-family:baskerville; text-transform:uppercase; text-align:center; color:#22513d}
-.toparea h2{ font-size:26px; text-align:center;}
+.toparea h2{ font-size:26px; text-align:center; color:#22513d}
 
 .navarea{ position:fixed; z-index:1; top:0; left:0; width:100%; overflow:hidden; border-bottom:#b9975b 4px solid;
     background: #115740; /* Old browsers */
@@ -27,8 +29,8 @@ p{ margin-top:10px}
 .navarea .lk:hover,
 .navarea .select{ background-color:#163029}
 
-.bannerarea{ position:relative;}
-.bannerarea img{ opacity:0}
+.bannerarea{}
+.bannerarea .item{ position:relative;}
 .bannerarea .txtarea{ opacity:0; position:absolute; left:0; top:0; width:100%; height:100%;
     -webkit-transition:opacity .5s ease-in-out;
 }
@@ -54,6 +56,13 @@ p{ margin-top:10px}
 .wechat{ text-align:center;}
 .wechat img{ width:120px;}
 
+.owl-prev,
+.owl-next{ opacity:0; position:absolute; top:50%; margin-top:-25px; padding:15px 20px; color:#fff; background:rgba(0,0,0,.3); text-align:center; vertical-align:middle; font-size:20px;
+    -webkit-transition:opacity .5s ease-in-out;
+}
+.owl-prev{ left:0}
+.owl-next{ right:0}
+
 @media screen and (min-width:768px){
     .tophold{ display:none}
     .navarea{ position:static;
@@ -65,7 +74,9 @@ p{ margin-top:10px}
         background: linear-gradient(to right,  #115740 32%,#277763 50%,#115740 68%); /* W3C */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#115740', endColorstr='#115740',GradientType=1 ); /* IE6-9 */
     }
-    .bannerarea:hover .txtarea{ opacity:1}
+    .bannerarea .item:hover .txtarea,
+    .bannerarea:hover .owl-prev,
+    .bannerarea:hover .owl-next{ opacity:1}
 }
 .tophold{ display:none\9}
 .navarea{ position:static\9;}
@@ -88,13 +99,25 @@ p{ margin-top:10px}
         </div>
     </div>
 
-    <div class="bannerarea" style="background:url(./guzhen.jpg); background-size:cover; background-position:center center">
-        <div class="txtarea">
-            <div class="inner">
-                <div class="con">恩陽古鎮<br /><small>四川省巴中市巴州區魁字灣一街</small></div>
+    <div class="bannerarea">
+        <div class="owl-carousel">
+            <div class="item">
+                <img src="./guzhen.jpg" />
+                <div class="txtarea">
+                    <div class="inner">
+                        <div class="con">恩陽古鎮<br /><small>四川省巴中市巴州區魁字灣一街</small></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./yannanyuan.jpg" />
+                <div class="txtarea">
+                    <div class="inner">
+                        <div class="con">北大書院<br /><small>燕南園56號，北京大學美學與美育研究中心。前主人朱光潛，現主人葉朗，學術觀點認為中國傳統審美以意象為中心，著有《中國美學史大綱》等。</small></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLAAAAH0AQMAAAAXHkZRAAAABGdBTUEAALGPC/xhBQAAAANQTFRF////p8QbyAAAAGBJREFUeNrtwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/g0m+wABG8CoqwAAAABJRU5ErkJggg==" />
     </div>
 
     <div class="eventarea">
@@ -129,6 +152,27 @@ p{ margin-top:10px}
 
 </div>
 <script type="text/javascript" src="http://www.xiaojukeji.com/js/jquery.js"></script>
+<script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop : true,
+    smartSpeed : 500,
+    autoplay : true,
+    autoplayTimeout : 5000,
+    autoplayHoverPause : true,
+    nav : true,
+    navText : ['<span class="icon-arrow-left2"></span>','<span class="icon-arrow-right2"></span>'],
+    responsiveClass : true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+    }
+  });
+});
+</script>
 </body>
 
 </html>
