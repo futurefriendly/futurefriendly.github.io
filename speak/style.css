@@ -21,7 +21,7 @@ a:active{ background:none;}
 
 .tx_c{ text-align:center;}
 
-.clear:after{ content:'.'; clear:both; display:block; visibility:hidden;}
+.clear:after{ content:'.'; clear:both; display:block; visibility:hidden; font-size:0; line-height:0}
 .clear{ zoom:1;}
 
 @font-face {

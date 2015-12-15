@@ -17,7 +17,13 @@ p{ margin-top:10px}
 .toparea h1{ font-size:32px; font-family:baskerville; text-transform:uppercase; text-align:center; color:#22513d}
 .toparea h2{ font-size:26px; text-align:center;}
 
-.navarea{ background-color:#1f6c56; height:0; overflow:hidden; border-bottom:#b9975b 4px solid}
+.navarea{ overflow:hidden; border-bottom:#b9975b 4px solid;
+    background: #115740; /* Old browsers */
+}
+.navarea .inner{ max-width:700px; margin:0 auto}
+.navarea .lk{ display:block; float:left; padding:15px 20px; color:#fff}
+.navarea .lk:hover,
+.navarea .select{ background-color:#163029}
 
 .bannerarea{ position:relative;}
 .bannerarea img{ opacity:0}
@@ -47,6 +53,15 @@ p{ margin-top:10px}
 .wechat img{ width:120px;}
 
 @media screen and (min-width:768px){
+    .navarea{
+        background: -moz-linear-gradient(left,  #115740 32%, #277763 50%, #115740 68%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(32%,#115740), color-stop(50%,#277763), color-stop(68%,#115740)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* IE10+ */
+        background: linear-gradient(to right,  #115740 32%,#277763 50%,#115740 68%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#115740', endColorstr='#115740',GradientType=1 ); /* IE6-9 */
+    }
     .bannerarea:hover .txtarea{ opacity:1}
 }
 
@@ -61,7 +76,9 @@ p{ margin-top:10px}
     </div>
 
     <div class="navarea">
-        
+        <div class="inner clear">
+            <a class="lk select" href="./">Home</a>
+        </div>
     </div>
 
     <div class="bannerarea" style="background:url(./yannanyuan2.jpg); background-size:cover; background-position:center center">
