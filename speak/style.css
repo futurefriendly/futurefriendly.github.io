@@ -9,7 +9,7 @@ address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:nor
 ol,ul{list-style:none}
 caption,th{text-align:left}
 h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
-body{ font:16px/1.5 Helvetica,Arial,Mingliu,sans-serif; -webkit-user-select:none}
+body{ font:16px/1.5 Helvetica,Arial,Mingliu,sans-serif; -webkit-user-select:none;}
 input,textarea,select,button{ outline: none; resize:none; font:16px/1.5 Helvetica,Arial,sans-serif;}
 select{font-size:12px}
 button{line-height:1.231;white-space:nowrap;vertical-align:middle;cursor:pointer}
@@ -145,3 +145,6 @@ a:active{ background:none;}
 	content: "\e60e";
 }
 
+@media screen and (min-width:768px){
+	body{ -webkit-user-select:auto;}
+}
