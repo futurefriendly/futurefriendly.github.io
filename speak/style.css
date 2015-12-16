@@ -148,3 +148,9 @@ a:active{ background:none;}
 @media screen and (min-width:768px){
 	body{ -webkit-user-select:auto;}
 }
+
+
+a{ color:#b58e5b}
+.tb_content{ width:100%; border-collapse:collapse; margin:10px 0 0;}
+.tb_content th,.tb_content td{ padding:10px 15px; border:#e1e1e1 1px solid;}
+.tb_content th{ background:#f4f4f4;}
