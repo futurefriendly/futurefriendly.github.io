@@ -8,7 +8,7 @@
 body {
   background: #efeee8;
   color: #454545;
-  font: 1.1em/1.7 'Gill Sans', 'Droid Sans', 'Calibri', 'Lucida Grande', 'Trebuchet MS', 'Helvetica Neue', 'Arial', sans-serif;
+  font: 16px/1.5 Microsoft Yahei, sans-serif;
   max-width: 34em;
   margin: 0 auto;
   padding: 1em 3%;
@@ -36,16 +36,14 @@ a[href]:active {
 
 h1,h2,h3 {
   color: #a42b22;
-  text-transform: uppercase;
-  font-family: 'Futura', 'Trebuchet MS', 'Calibri', 'Helvetica Neue', 'Arial', sans-serif;
+  font-family: Microsoft Yahei, sans-serif;
+  font-weight:100;
   text-align: center;
 }
 h2,h3 {
   margin-top: 1.8em;
 }
 h2 {
-  text-transform: lowercase;
-  font-variant: small-caps;
   font-size: 1.25em;
   line-height: 1em;
 }
@@ -311,7 +309,7 @@ header h2:before, header h2:after {
   #signatories li {
     text-transform: lowercase;
     font-variant: small-caps;
-    font-family: 'Quattrocento Sans', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: Microsoft Yahei, sans-serif;
     font-size: 1em;
   }
   #hope ol li {

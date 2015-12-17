@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>問津書院</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="./style.css" />
+<style>
+body{ background:#115740;}
+p{ margin-top:10px}
+.c_t9{ color:#999}
+.container{}
+
+.tophold{ height:54px;}
+
+.toparea{ padding:50px 20px 35px; border-top:#b9975b 4px solid; background:#fff;}
+.toparea h1{ font-size:32px; font-family:baskerville; text-transform:uppercase; text-align:center; color:#22513d}
+.toparea h2{ font-size:26px; text-align:center; color:#22513d; font-weight:800}
+
+.navarea{ position:fixed; z-index:1; top:0; left:0; width:100%; overflow:hidden; border-bottom:#b9975b 4px solid;
+    background: #115740; /* Old browsers */
+}
+.navarea .inner{ max-width:700px; margin:0 auto}
+.navarea .lk{ display:block; float:left; padding:15px 20px; color:#fff}
+.navarea .lk:hover,
+.navarea .select{ background-color:#163029}
+
+.commentarea{ padding:30px 20px 50px; background:#fff;}
+.commentarea .inner{ max-width:700px; margin:0 auto;}
+.commentarea h3{ color:#b58e5b; font-size:20px; text-transform:uppercase;}
+
+.footarea{ background:#115740; padding:20px 20px 50px; border-top:#b9975b 3px solid; color:#fbfcfc}
+.footarea h3{ text-align:center; margin-top:30px; font-size:20px}
+.footarea p{ color:#fbfcfc}
+.footarea a{ color:#e6edeb;}
+.footarea a:hover{ text-decoration:underline;}
+.wechat{ text-align:center;}
+.wechat img{ width:120px;}
+
+@media screen and (min-width:768px){
+    .tophold{ display:none}
+    .navarea{ position:static;
+        background: -moz-linear-gradient(left,  #115740 32%, #277763 50%, #115740 68%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(32%,#115740), color-stop(50%,#277763), color-stop(68%,#115740)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #115740 32%,#277763 50%,#115740 68%); /* IE10+ */
+        background: linear-gradient(to right,  #115740 32%,#277763 50%,#115740 68%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#115740', endColorstr='#115740',GradientType=1 ); /* IE6-9 */
+    }
+    .bannerarea:hover .txtarea{ opacity:1}
+}
+.tophold{ display:none\9}
+.navarea{ position:static\9;}
+
+</style>
+</head>
+
+<body ontouchstart="">
+<div class="container">
+    <div class="tophold"></div>
+    <div class="toparea">
+        <h1><big>F</big>uture <big>F</big>riendly <big>C</big>ollege</h1>
+        <h2>問津書院</h2>
+    </div>
+
+    <div class="navarea">
+        <div class="inner clear">
+            <a class="lk" href="./index.html">首頁</a>
+            <a class="lk" href="./note.html">筆記</a>
+            <a class="lk select" href="./comment.html">交流</a>
+        </div>
+    </div>
+
+    <div class="commentarea">
+        <div class="inner">
+        <h3>Comments</h3>
+        <div id="disqus_thread"></div>
+        <script>
+        /**
+        * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+        */
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+
+        s.src = '//fflycollege.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+    </div>
+
+    <div class="footarea">
+        <h3>微信公众号</h3>
+        <p class="tx_c">Wechat QRcode</p>
+        <p class="wechat">
+            <img src="./en.jpg" /><img src="./zh.jpg" style="margin-left:20px" />
+        </p>
+        <p class="tx_c"><a href="http://www.futurefriendly.cn">Future Friendly</a> & <a href="http://www.futurefriendly.cn/speak/">问津书院</a></p>
+        <p class="tx_c">@帝都，辐射互联网，一群爱学习爱分享的大叔和小鲜肉</p>
+        <p class="tx_c">A group guys focus on web design & develop who loves sharing now based in Beijing.</p>
+    </div>
+
+</div>
+<script id="dsq-count-scr" src="//fflycollege.disqus.com/count.js" async></script>
+</body>
+
+</html>
