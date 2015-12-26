@@ -16,8 +16,17 @@ body{ background:#111;
 	perspective-origin:50% 50%;
 }
 
-.c{ position:absolute; width:33.3%; left:0; top:0; text-align:center;}
+.c{ position:absolute; width:33.3%; height:33.3%; left:0; top:0; text-align:center; vertical-align:middle;
+	 display:-webkit-box;
+	 display:box;
+	 -webkit-box-align:center;
+	 box-align:center;
+	 -webkit-box-pack:center;
+	 box-pack:center;
+ }
 .c img{
+	 display:-webkit-box;
+	 display:box;
 }
 .c:nth-child(3n+2){ left:33.3%}
 .c:nth-child(3n+3){ left:66.6%}
