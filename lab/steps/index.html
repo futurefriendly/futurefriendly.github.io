@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>steps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link rel="stylesheet" type="text/css" href="http://static.didialift.com/pinche/css/merged-common-ui.css">
+<style>
+.canvas{ position:relative;}
+.canvas img{ width:100%}
+.wugang{ position:absolute; left:0; top:0; width:100%; height:100%}
+.wugang .body{ position:absolute; left:0; top:74.4%; width:53.3%; overflow:hidden;}
+.wugang .body img{ width:400%;
+	animation:aniwugangbody .5s steps(1) infinite;
+}
+.wugang .head{ position:absolute; left:14.6%; top:20.5%; width:28%}
+.wugang .head img{
+	animation:updown .5s steps(1) infinite;
+}
+@keyframes aniwugangbody{
+	0%{ transform:translateX(0);}
+	25%{ transform:translateX(-25%);}
+	50%{ transform:translateX(-50%);}
+	75%{ transform:translateX(-25%);}
+	100%{ transform:translateX(0);}
+}
+@keyframes updown{
+	0%{ transform:translateY(1%);}
+	25%{ transform:translateY(0%);}
+	50%{ transform:translateY(1%);}
+	75%{ transform:translateY(0%);}
+	100%{ transform:translateY(1%);}
+}
+</style>
+</head>
+<body ontouchstart="">
+<div class="canvas">
+	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAABGdBTUEAALGPC/xhBQAAAANQTFRFAAAAp3o92gAAAAF0Uk5TAEDm2GYAAAALSURBVAjXY2DABwAAHgABboVHMgAAAABJRU5ErkJggg==" />
+	<div class="wugang">
+		<div class="body">
+			<img src="wugang2.png" />
+		</div>
+		<div class="head">
+			<img src="wugang1.png" />
+		</div>
+	</div>
+</div>
+</body>
+</html>
